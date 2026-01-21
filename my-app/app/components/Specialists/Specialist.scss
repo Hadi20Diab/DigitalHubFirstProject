@@ -17,6 +17,7 @@
         justify-content: space-between;
         flex-direction: column;
         width: 17.8125rem;
+        transition: all 0.3s ease;
 
         &:hover{
             background-color: var(--primary-color);
