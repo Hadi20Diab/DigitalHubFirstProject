@@ -1,0 +1,20 @@
+.OurMembersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    //   padding: var(--padding);
+    //   gap: var(--padding);
+    justify-content: center;
+    background-color: var(--secoundary-color);
+    width: 100%;
+
+    div{
+        flex: 1;
+    }
+}
+
+
+.highlight-text {
+    color: var(--primary-color);
+    display: inline-block;
+}
