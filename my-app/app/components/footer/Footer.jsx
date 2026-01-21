@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-address"> 
                     <h2 className="address-title">Address</h2>
-                    <a href="https://maps.app.goo.gl/7mzAXH2oQG7JzNpQA" target="_blank" rel="noopener noreferrer"><img src="./Rectangle 18.png" alt="there is no image" /></a>
+                    <a href="https://maps.app.goo.gl/7mzAXH2oQG7JzNpQA" target="_blank" rel="noopener noreferrer"><img src="./assets/images/Rectangle 18.png" alt="there is no image" /></a>
                 </div>
             </div>
             <div className="footer-copyright">

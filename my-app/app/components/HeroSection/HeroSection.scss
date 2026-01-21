@@ -57,7 +57,7 @@
                 justify-content: space-between;
                 background-color: var(--secoundary-text-color);
                 color: var(--primary-text-color);
-                padding: 1rem 2rem;
+                padding: 0.5rem 1rem;
                 border-radius: 2rem;
                 align-items: center;
 
@@ -93,6 +93,7 @@
     padding: 1rem var(--padding);
     display: flex;
     gap: 2rem;
+    margin-top: var(--padding);
 
     .col-3 {
         color: var(--secoundary-text-color);
