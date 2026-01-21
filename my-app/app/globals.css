@@ -45,3 +45,8 @@ main{
   margin: 0 auto;
   min-height: 80vh;
 }
+
+header{
+  min-height: 50vh;
+  background-color: var(--secoundary-color);
+}
