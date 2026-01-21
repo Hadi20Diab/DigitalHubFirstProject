@@ -3,7 +3,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <section className="row">
+        <section className="navSection row">
             <div className="logo-text"><h1>E-<span>sheba</span></h1></div>
             <nav>
                 <ul>
