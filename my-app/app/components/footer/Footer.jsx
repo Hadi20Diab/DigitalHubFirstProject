@@ -19,14 +19,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-links">
-                    <h3>Useful Links</h3>
+                    <h3 className="links-title">Useful Links</h3>
                     <a href="">About Us</a>
                     <a href="">Privacy Policy</a>
                     <a href="">Our Mission</a>
                     <a href="">Our Team</a>
                 </div>
                 <div className="footer-address"> 
-                    <h3>Address</h3>
+                    <h3 className="address-title">Address</h3>
                     <img src="#" alt="there is no image" />
                 </div>
             </div>
