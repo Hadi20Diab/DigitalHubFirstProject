@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-copyright">
-                <hr style={{width: "85%" , margin: "0 auto", marginTop: "20px", marginBottom: "20px"}}/>
+                <hr style={{width: "100%" , margin: "0 auto", marginTop: "20px", marginBottom: "20px"}}/>
                 <p>© 2026 All Right Reserved.</p>
             </div>
         </div>
