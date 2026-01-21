@@ -10,7 +10,7 @@ const QualityHealth = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. sed. Nibh est sit lobortis id semper.</p>
-                <a href="">Learn More</a>
+                <a href="">Learn More <i className="bi bi-arrow-right"></i></a>
            </div>
            <div className="QualityHealth-images">
                 <img src="./assets/images/Rectangle 15.png" alt="Quality Health Image 1" />
