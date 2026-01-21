@@ -8,7 +8,28 @@ const HeroSection = () => {
                 <div className="hero-text">
                     <h1>Find & Search Your<br/><span className="highlight-text">Favourite</span> Doctor</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Sem velit viverra amet faucibus.</p>
-                    <div></div>
+                    <div className="search-bar">
+                        <div className="col-3">
+                            <i className="bi bi-person-circle"></i>
+                            <select>
+                                <option value="" disabled selected>Doctor’s Name</option>
+                                <option value="HadiDiab">Hadi Diab</option>
+                                <option value="MahmoudShadi">Mahmoud Shadi</option>
+                            </select>
+                        </div>
+                        <div className="col-3">
+                            <i className="bi bi-geo-alt"></i>
+                            <select>
+                                <option value="" disabled selected>Location</option>
+                                <option value="NewYork">New York</option>
+                                <option value="California">California</option>
+                            </select>
+                        </div>
+                        <div className="col-3 search-button">
+                            <i className="bi bi-search"></i>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div className="hero-image"></div>
             </div>
