@@ -1,0 +1,40 @@
+.Specialist-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+    .specialist-cards{
+        display: flex;
+        gap: 0.625rem;
+        width: 100%;
+        justify-content: space-between;
+
+        .specialist-card{
+        border: 1px solid black;
+        border-radius: 1.25rem;
+        padding: 1.875rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 17.8125rem;
+     
+
+
+            .specialist-icon{
+               border : 2px solid transparent;
+               background-color: #E6F5FC;
+               border-radius: 50%;
+               padding: 1.25rem;
+               width: 5rem;
+            }
+
+
+        
+        }
+
+
+    }
+
+
+
+}

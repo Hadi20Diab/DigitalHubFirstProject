@@ -6,7 +6,7 @@
   --primary-text-color: 171717;
   --secoundary-text-color: #FFFFFF;
 
-  --padding: 4rem;
+  --padding: 8rem;
 }
 
 @media (prefers-color-scheme: dark) {
