@@ -24,6 +24,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: serif !important;
 }
 
 body {
@@ -46,13 +47,13 @@ body {
   }
 }
 
-main{
+main {
   width: 80%;
   margin: 0 auto;
   min-height: 80vh;
 }
 
-header{
+header {
   min-height: 50vh;
   background-color: var(--secoundary-color);
 }
