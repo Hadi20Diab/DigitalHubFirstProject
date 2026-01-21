@@ -12,13 +12,13 @@ const HeroSection = () => {
                 </div>
                 <span className="vertical-line"></span>
                 <div className="col-3">
-                    <h3>24/7</h3>
-                    <p>Online Support</p>
+                    <h3>100+</h3>
+                    <p>Doctors</p>
                 </div>
                 <span className="vertical-line"></span>
                 <div className="col-3">
-                    <h3>24/7</h3>
-                    <p>Online Support</p>
+                    <h3>1M+</h3>
+                    <p>Active Patients</p>
                 </div>
             </div>
         </section>
