@@ -1,0 +1,36 @@
+.footer-container {
+  text-align: center;
+
+  .footer-content {
+  display: flex;
+  justify-content: space-around;
+  }
+
+  .footer-logo{
+    max-width: 366px;
+    text-align: start;
+
+    .footer-brand-name-and-text{
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+  }
+
+
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      text-align: start;
+      color: black; //changeit
+    }
+
+  }
+
+}
+
