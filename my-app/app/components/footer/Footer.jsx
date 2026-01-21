@@ -1,5 +1,6 @@
 import React from "react";
-import "./Footer.scss"
+import "./Footer.scss";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Footer = () => {
     return (
@@ -12,9 +13,9 @@ const Footer = () => {
                         <p className="desc2">volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p>
                     </div>
                     <div className="footer-social-media">
-                        <a href="">FC</a>
-                        <a href="">IN</a>
-                        <a href="">TW</a>
+                        <a href=""><i className="bi bi-facebook"></i></a>
+                        <a href=""><i className="bi bi-instagram"></i></a>
+                        <a href=""><i className="bi bi-twitter"></i></a>
                     </div>
                 </div>
                 <div className="footer-links">
