@@ -22,6 +22,7 @@
                 font-size: 1.2rem;
                 color: var(--primary-text-color);
                 margin-bottom: 1.5rem;
+                line-height: 1.5;
             }
         }
         .hero-image{
@@ -31,12 +32,12 @@
 
     .row-features {
         background-color: var(--primary-color);
-        padding: 1rem 2rem;
+        padding: 1rem var(--padding);
         display: flex;
         gap: 2rem;
 
         .col-3 {
-            color: var(--primary-text-color);
+            color: var(--secoundary-text-color);
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -48,7 +49,7 @@
         }
 
         .vertical-line {
-            background-color: var(--primary-text-color);
+            background-color: var(--secoundary-text-color);
             width: 1px;
             height: 50px;
             align-self: center;
