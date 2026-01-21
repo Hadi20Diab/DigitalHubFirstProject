@@ -1,0 +1,60 @@
+.Subscribe-section{
+    height: 350px;
+    width: 1200px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-self: center;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    h1{
+        color: var(--secoundary-text-color);
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .input-wrapper {
+        position: relative;
+        width: 700px;
+        align-self: center;
+
+        input{
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            border: none;
+            padding: 10px 70px 10px 30px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .submit-btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            i {
+                color: white;
+                font-size: 1.2rem;
+            }
+
+            &:hover {
+                transform: translateY(-50%) scale(1.05);
+            }
+        }
+    }
+
+}
