@@ -1,7 +1,7 @@
 .footer-container {
   text-align: center;
   background-color: #0360D9;
-  color: var(--text-color);
+  color: var(--primary-text-color);
   padding: 80px 0 20px 0;
 
   .footer-content {
@@ -27,7 +27,7 @@
       gap: 12px;
 
       a {
-        color: var(--text-color);
+        color: var(--primary-text-color);
         font-size: 16px;
         text-decoration: none;
       }
@@ -43,7 +43,7 @@
     a {
       text-decoration: none;
       text-align: start;
-      color: var(--text-color);
+      color: var(--primary-text-color);
     }
 
   }

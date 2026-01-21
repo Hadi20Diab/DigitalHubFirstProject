@@ -1,15 +1,27 @@
 .hero-section {
-    
+    margin-top: 2rem;
     .hero-content{
         padding: 0 var(--padding);
+        display: flex;
+
+        div{
+            flex: 1;
+        }
+
         .hero-text{
             h1{
                 font-size: 3rem;
                 line-height: 1.5;
+                margin-bottom: 1rem;
                 
                 .highlight-text{
                     color: var(--primary-color);
                 }
+            }
+            p{
+                font-size: 1.2rem;
+                color: var(--primary-text-color);
+                margin-bottom: 1.5rem;
             }
         }
         .hero-image{
@@ -24,7 +36,7 @@
         gap: 2rem;
 
         .col-3 {
-            color: var(--text-color);
+            color: var(--primary-text-color);
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -36,7 +48,7 @@
         }
 
         .vertical-line {
-            background-color: var(--text-color);
+            background-color: var(--primary-text-color);
             width: 1px;
             height: 50px;
             align-self: center;

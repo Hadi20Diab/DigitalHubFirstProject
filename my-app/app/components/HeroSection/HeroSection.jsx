@@ -7,7 +7,7 @@ const HeroSection = () => {
             <div className="hero-content">
                 <div className="hero-text">
                     <h1>Find & Search Your<br/><span className="highlight-text">Favourite</span> Doctor</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Sem velit viverra amet faucibus.</p>
                     <div></div>
                 </div>
                 <div className="hero-image"></div>
