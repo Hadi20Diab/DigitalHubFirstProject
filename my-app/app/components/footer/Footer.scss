@@ -2,12 +2,12 @@
   text-align: center;
   background-color: #0360D9;
   color: var(--secoundary-text-color);
-  padding: 80px 0 20px 0;
+  padding: 60px  var(--padding) 20px ;
 
   .footer-content {
   margin-bottom: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   }
 
   .footer-logo{
