@@ -1,5 +1,6 @@
 .hero-section {
     margin-top: 2rem;
+    position: relative;
 
     .hero-content {
         padding: 0 var(--padding);
@@ -60,6 +61,11 @@
                 padding: 0.5rem 1rem;
                 border-radius: 2rem;
                 align-items: center;
+                z-index: 1;
+                position: relative;
+                width: 35rem;
+                flex-wrap: wrap;
+
 
                 select {
                     border: none;
@@ -85,7 +91,30 @@
         }
     }
 
-    .hero-image {}
+    .hero-images {
+
+        img {
+            position: absolute;
+            bottom: 0 !important;
+            right: 0 !important;
+            top: auto !important;
+            left: auto !important;
+            // height: auto !important;
+            width: 50rem !important;
+        }
+
+        .heroImage {
+            z-index: 2;
+            height: 110% !important;
+            right: 2% !important;
+        }
+
+        .backgroundHeroImage {
+            z-index: 0;
+            height: 70% !important;
+            width: 45rem !important;
+        }
+    }
 }
 
 .row-features {
@@ -94,6 +123,8 @@
     display: flex;
     gap: 2rem;
     margin-top: var(--padding);
+    z-index: 1;
+    position: relative;
 
     .col-3 {
         color: var(--secoundary-text-color);

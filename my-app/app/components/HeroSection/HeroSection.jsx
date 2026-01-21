@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.scss"
+import Image from "next/image";
 
 const HeroSection = () => {
     return (
@@ -27,11 +28,13 @@ const HeroSection = () => {
                         </div>
                         <div className="col-3 search-button">
                             <i className="bi bi-search"></i>
-                            
                         </div>
                     </div>
                 </div>
-                <div className="hero-image"></div>
+                <div className="hero-images">
+                    <Image src="/assets/images/doctor.png" alt="Hero Image" fill className="heroImage"  />
+                    <Image src="/assets/images/Ellipse_14.png" alt="Hero Image"  fill className="backgroundHeroImage"  />
+                </div>
             </div>
             <div className="row-features">
                 <div className="col-3">
