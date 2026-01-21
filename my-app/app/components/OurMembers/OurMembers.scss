@@ -2,14 +2,48 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    //   padding: var(--padding);
-    //   gap: var(--padding);
     justify-content: center;
     background-color: var(--secoundary-color);
     width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
-    div{
+    div {
         flex: 1;
+    }
+
+    .OurMembers_contant {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .OurMembers_reviews {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            .OurMembers_images {
+                display: flex;
+                margin-left: 1em;
+                max-width: fit-content !important;
+
+                img {
+                    border: 2px solid var(--secoundary-color);
+                    border-radius: 50%;
+                    margin-left: -1em;
+                }
+            }
+
+            .ourMembers_reviews_count {
+                font-size: 1.2rem;
+                color: var(--primary-text-color);
+                font-weight: 600;
+            }
+        }
     }
 }
 
