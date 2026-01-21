@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import HeroSection from "@/app/components/HeroSection/HeroSection";
@@ -8,6 +8,34 @@ import "./Navbar.scss"
 const Navbar = () => {
     const pathname = usePathname();
     
+    const [theme, setTheme] = useState("light");
+
+    useEffect(() => {
+        try {
+            const stored = localStorage.getItem("theme");
+            if (stored === "light" || stored === "dark") {
+                setTheme(stored);
+                document.documentElement.setAttribute("data-theme", stored);
+            } else {
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const initial = prefersDark ? "dark" : "light";
+                setTheme(initial);
+                document.documentElement.setAttribute("data-theme", initial);
+            }
+        } catch (e) {
+            // localStorage might be unavailable in some environments
+        }
+    }, []);
+
+    const toggleTheme = () => {
+        const next = theme === "dark" ? "light" : "dark";
+        setTheme(next);
+        try {
+            localStorage.setItem("theme", next);
+        } catch (e) {}
+        document.documentElement.setAttribute("data-theme", next);
+    };
+
     return (
         <>
             <section className="navSection row">
@@ -21,6 +49,9 @@ const Navbar = () => {
                     </ul>
                 </nav>
                 <div className="row">
+                    <button type="button" className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+                        {theme === "dark" ? "🌙" : "☀️"}
+                    </button>
                     <Link href="/login" className="button button-1">Login</Link>
                     <Link href="/signup" className="button button-2">Signup</Link>
                 </div>

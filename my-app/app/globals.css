@@ -33,12 +33,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 200ms ease, color 200ms ease;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+/* Theme override when toggled via `html[data-theme="dark"]` */
+html[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary-color: #3399FF;
+  --secoundary-color: #1a1a1a;
+  --primary-text-color: #ededed;
+  --secoundary-text-color: #FFFFFF;
+}
+
+/* Simple theme-toggle button styling */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  border-color: rgba(255,255,255,0.12);
 }
 
 @media (prefers-color-scheme: dark) {
