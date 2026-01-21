@@ -5,7 +5,7 @@
   --secoundary-color: #E1EEFF;
   --text-color: #FFFFFF;
 
-  --width-container: 85%;
+  --padding: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
