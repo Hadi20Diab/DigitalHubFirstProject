@@ -40,13 +40,23 @@
     display: flex;
     flex-direction: column;
 
+    .links-title{
+      margin-bottom: 20px;
+    }
+
     a {
       text-decoration: none;
       text-align: start;
       color: var(--secoundary-text-color);
+      margin-bottom: 10px;
     }
 
   }
+
+  .address-title{
+    margin-bottom: 20px;
+  }
+  
 
 }
 
