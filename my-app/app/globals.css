@@ -4,6 +4,8 @@
   --primary-color: #0360D9;
   --secoundary-color: #E1EEFF;
   --text-color: #FFFFFF;
+
+  --width-container: 85%;
 }
 
 @media (prefers-color-scheme: dark) {
