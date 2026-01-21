@@ -3,6 +3,7 @@
   --foreground: #171717;
   --primary-color: #0360D9;
   --secoundary-color: #E1EEFF;
+  --text-color: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
     --foreground: #ededed;
     --primary-color: #3399FF;
     --secoundary-color: #1a1a1a;
+    --text-color: #FFFFFF
   }
 }
 
