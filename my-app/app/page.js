@@ -11,9 +11,7 @@ export default function Home() {
       <Specialist />
       <ChooseUs />
       <OurMembers />      
-    <Specialist />
-    <ChooseUs />
-    <QualityHealth />
+      <QualityHealth />
     </>
   );
 }
