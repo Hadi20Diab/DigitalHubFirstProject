@@ -4,7 +4,7 @@ import "./ChooseUs.scss"
 const ChooseUs = () => {
     return (
         <section className="ChooseUs-section">
-            <img src="./Rectangle 11.png" alt="Why Choose Us" />
+            <img src="./assets/images/Rectangle 11.png" alt="Why Choose Us" />
            <div className="ChooseUs-text">
               <h1 className="ChooseUS-title">Why You Choose Us?</h1>
               <div className="ChooseUs-points">

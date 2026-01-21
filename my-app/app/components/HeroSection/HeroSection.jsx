@@ -13,7 +13,7 @@ const HeroSection = () => {
                         <div className="col-3">
                             <i className="bi bi-person-circle"></i>
                             <select>
-                                <option value="" disabled selected>Doctor’s Name</option>
+                                <option value="s" disabled selected>Doctor’s Name</option>
                                 <option value="HadiDiab">Hadi Diab</option>
                                 <option value="MahmoudShadi">Mahmoud Shadi</option>
                             </select>
