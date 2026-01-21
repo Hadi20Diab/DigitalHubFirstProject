@@ -22,9 +22,9 @@ const OurMembers = () => {
                 </div>
             </div>
             <div className="OurMembers_card">
-                <div>
-                    <div>
-                        <Image src="/assets/images/member3.png" alt="member-profile" width={60} height={60} />
+                <div className="OurMembers_card_header">
+                    <div className="profile">
+                        <Image src="/assets/images/member4.png" alt="member-profile" width={60} height={60} />
                         <div>
                             <h4>Jane Cooper</h4>
                             <p>12/4/17</p>
