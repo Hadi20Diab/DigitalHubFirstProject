@@ -1,0 +1,24 @@
+.row-features {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+
+    .col-3{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+
+        h3{
+            font-size: 2rem;
+        }
+    }
+    .vertical-line{
+        background-color: 1px;
+        width: 2px;
+        height: 50px;
+        align-self: center;
+    }
+}
