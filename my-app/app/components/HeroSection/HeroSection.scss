@@ -14,9 +14,27 @@
                 line-height: 1.5;
                 margin-bottom: 1rem;
                 
-                .highlight-text{
-                    color: var(--primary-color);
-                }
+                                .highlight-text{
+                                        color: var(--primary-color);
+                                        display: inline-block;
+                                        position: relative;
+                                        padding-bottom: 4px;
+                                        z-index: 0;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            left: -6%;
+                                            right: -6%;
+                                            bottom: 0px; /* move underline slightly lower */
+                                            height: 4px; /* thickness of the underline */
+                                            background: linear-gradient(90deg, rgba(0,123,255,0.95), rgba(0,100,230,0.9));
+                                            border-radius: 999px; /* rounded pill shape */
+                                            transform: rotate(-2deg) scaleX(1.04); /* slight slant and stretch */
+                                            z-index: -1; /* place under the text */
+                                            pointer-events: none;
+                                        }
+                                }
             }
             p{
                 font-size: 1.2rem;
