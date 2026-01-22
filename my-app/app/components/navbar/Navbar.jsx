@@ -50,7 +50,7 @@ const Navbar = () => {
                 </nav>
                 <div className="row">
                     <button type="button" className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-                        {theme === "dark" ? <i className="bi bi-moon-fill"></i> : <i className="bi bi-sun-fill"></i>}
+                        {theme === "dark" ? "🌙" : "☀️"}
                     </button>
                     <Link href="/login" className="button button-1">Login</Link>
                     <Link href="/signup" className="button button-2">Signup</Link>

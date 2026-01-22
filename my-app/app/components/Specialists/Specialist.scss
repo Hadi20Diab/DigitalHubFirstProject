@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 1.875rem;
 
-    .specialist-cards {
+    .specialist-cards{
         display: flex;
         gap: 0.625rem;
         width: 100%;
@@ -25,26 +25,24 @@
         flex: 1;
         min-width: 200px;
 
-            &:hover {
-                background-color: var(--primary-color);
-                color: var(--secoundary-text-color);
-                border-color: var(--primary-color);
+        &:hover{
+            background-color: var(--primary-color);
+            color: var(--secoundary-text-color);
+            border-color: var(--primary-color);
+        }
+     
+
+
+            .specialist-icon{
+               border : 2px solid transparent;
+               background-color: var(--secoundary-color);
+               border-radius: 50%;
+               padding: 1.25rem;
+               width: 5rem;
             }
 
 
-
-            .specialist-icon {
-                border: 2px solid transparent;
-                background-color: var(--secoundary-color);
-                background-color: var(--primary-text-color);
-
-                border-radius: 50%;
-                padding: 1.25rem;
-                width: 5rem;
-            }
-
-
-
+        
         }
 
 
