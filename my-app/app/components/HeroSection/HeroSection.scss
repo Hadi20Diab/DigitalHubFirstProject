@@ -35,7 +35,7 @@
                         /* move underline slightly lower */
                         height: 4px;
                         /* thickness of the underline */
-                        background: linear-gradient(90deg, rgba(0, 123, 255, 0.95), rgba(0, 100, 230, 0.9));
+                        background: var(--primary-color);
                         border-radius: 999px;
                         /* rounded pill shape */
                         transform: rotate(-2deg) scaleX(1.04);
@@ -59,20 +59,21 @@
                 gap: 0.5rem;
                 margin-top: 1rem;
                 justify-content: space-between;
-                background-color: var(--secoundary-text-color);
-                color: var(--primary-text-color);
+                background: var(--secoundary-text-color);
+                color: var(--primary-color);
                 padding: 0.5rem 1rem;
                 border-radius: 2rem;
                 align-items: center;
-                z-index: 1;
+                z-index: 4;
                 position: relative;
                 width: 35rem;
                 flex-wrap: wrap;
-                max-width: 100%;
-                
-                
+
+
                 select {
                     border: none;
+                    padding: 0.3em;
+                    border-radius: 1em;
                 }
 
                 .search-button {
@@ -171,6 +172,12 @@
             }
         }
     }
+}
+
+/* Hide decorative background image in dark theme */
+html[data-theme="dark"] .backgroundHeroImage,
+html[data-theme="dark"] .hero-images .backgroundHeroImage {
+    display: none !important;
 }
 
 .row-features {
