@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "vercel-build": "cd my-app && npm ci && npm run build"
+  },
   "devDependencies": {
     "sass": "^1.97.2"
   },
