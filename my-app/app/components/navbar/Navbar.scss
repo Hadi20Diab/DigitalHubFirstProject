@@ -61,6 +61,11 @@
         justify-content: center;
         gap: 0.8em;
     }
+    .theme-toggle{
+        color: var(--foreground);
+        font-size: 1.3em;
+        border: none;
+    }
 }
 
 .logo-text {

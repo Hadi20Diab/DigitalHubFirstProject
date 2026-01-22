@@ -32,12 +32,23 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary-color: #3399FF;
+    --primary-color: #527aa1;
     --secoundary-color: #e1eeffd4;
     --primary-text-color: #FFFFFF;
     --secoundary-text-color: #ededed;
   }
 }
+
+/* Theme override when toggled via `html[data-theme="dark"]` */
+html[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary-color: #4f83bd;
+  --secoundary-color: #e1eeff3d;
+  --primary-text-color: #FFFFFF;
+  --secoundary-text-color: #ededed;
+}
+
 
 html,
 body {
@@ -61,20 +72,12 @@ body {
   margin: 0;
 }
 
-/* Theme override when toggled via `html[data-theme="dark"]` */
-html[data-theme="dark"] {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary-color: #3399FF;
-  --secoundary-color: #e1eeffd4;
-  --primary-text-color: #FFFFFF;
-  --secoundary-text-color: #ededed;
-}
+
 
 /* Simple theme-toggle button styling */
 .theme-toggle {
   background: transparent;
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
   cursor: pointer;
@@ -83,7 +86,7 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] .theme-toggle {
-  border-color: rgba(255,255,255,0.12);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
