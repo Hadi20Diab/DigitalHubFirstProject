@@ -50,14 +50,14 @@
     }
 
     .OurMembers_card {
-        background-color: var(--secoundary-text-color);
+        background-color: var(--background);
         padding: 3em;
         border-radius: 1.5em;
         display: flex;
         flex-direction: column;
         gap: 2em;
         flex: 1;
-        border: 1px solid var(--primary-text-color);
+        border: 1px solid var(--background);
         max-width: 35em;
 
         .OurMembers_card_header {

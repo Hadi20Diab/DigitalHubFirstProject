@@ -15,8 +15,8 @@
     --foreground: #ededed;
     --primary-color: #3399FF;
     --secoundary-color: #e1eeffd4;
-    --primary-text-color: #ededed;
-    --secoundary-text-color: #FFFFFF;
+    --primary-text-color: #FFFFFF;
+    --secoundary-text-color: #ededed;
   }
 }
 
@@ -47,9 +47,9 @@ html[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
   --primary-color: #3399FF;
-  --secoundary-color: #63697175;
-  --primary-text-color: #ededed;
-  --secoundary-text-color: #FFFFFF;
+  --secoundary-color: #e1eeffd4;
+  --primary-text-color: #FFFFFF;
+  --secoundary-text-color: #ededed;
 }
 
 /* Simple theme-toggle button styling */
