@@ -24,6 +24,9 @@
                 background-color: var(--primary-color);
                 color: var(--secoundary-text-color);
                 border-color: var(--primary-color);
+                .specialist-icon {
+                    background-color: var(--secoundary-text-color);
+                }
             }
 
 
@@ -31,8 +34,6 @@
             .specialist-icon {
                 border: 2px solid transparent;
                 background-color: var(--secoundary-color);
-                background-color: var(--primary-text-color);
-
                 border-radius: 50%;
                 padding: 1.25rem;
                 width: 5rem;
