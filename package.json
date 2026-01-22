@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "e-sheba-root",
   "version": "1.0.0",
   "scripts": {
@@ -6,13 +7,12 @@
     "dev": "cd my-app && npm run dev",
     "start": "cd my-app && npm start"
   },
+=======
+>>>>>>> parent of f72eb57 (Merge branch 'main' of https://github.com/Hadi20Diab/DigitalHubFirstProject)
   "devDependencies": {
     "sass": "^1.97.2"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.13.1",
-    "next": "16.1.3",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "bootstrap-icons": "^1.13.1"
   }
 }
