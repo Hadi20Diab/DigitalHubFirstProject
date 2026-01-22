@@ -56,19 +56,26 @@
                 gap: 0.5rem;
                 margin-top: 1rem;
                 justify-content: space-between;
-                background-color: var(--secoundary-text-color);
-                color: var(--primary-text-color);
+                background: var(--secoundary-text-color);
+                color: var(--primary-color);
                 padding: 0.5rem 1rem;
                 border-radius: 2rem;
                 align-items: center;
-                z-index: 1;
+                z-index: 4;
                 position: relative;
                 width: 35rem;
                 flex-wrap: wrap;
 
+                .col-3 {
+                    display: flex;
+                    gap: 0.5em;
+                    align-items: center;
+                }
 
                 select {
                     border: none;
+                    padding: 0.3em;
+                    border-radius: 1em;
                 }
 
                 .search-button {

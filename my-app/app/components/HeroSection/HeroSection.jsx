@@ -12,7 +12,7 @@ const HeroSection = () => {
                     <div className="search-bar">
                         <div className="col-3">
                             <i className="bi bi-person-circle"></i>
-                            <select defaultValue="s">
+                            <select defaultValue="s" name="doctorName" id="doctorName">
                                 <option value="s" disabled>Doctor's Name</option>
                                 <option value="HadiDiab">Hadi Diab</option>
                                 <option value="MahmoudShadi">Mahmoud Shadi</option>
@@ -20,7 +20,7 @@ const HeroSection = () => {
                         </div>
                         <div className="col-3">
                             <i className="bi bi-geo-alt"></i>
-                            <select defaultValue="">
+                            <select defaultValue="" name="location" id="location">
                                 <option value="" disabled>Location</option>
                                 <option value="NewYork">New York</option>
                                 <option value="California">California</option>
