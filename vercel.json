@@ -1,20 +1,8 @@
 {
   "builds": [
     {
-      "src": "my-app/next.config.js",
-      "use": "@vercel/next",
-      "config": {
-        "distDir": ".next"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/my-app/$1"
+      "src": "my-app/package.json",
+      "use": "@vercel/next"
     }
   ]
 }
