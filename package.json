@@ -1,6 +1,10 @@
 {
+  "name": "e-sheba-root",
+  "version": "1.0.0",
   "scripts": {
-    "vercel-build": "cd my-app && npm ci && npm run build"
+    "build": "cd my-app && npm ci && npm run build",
+    "dev": "cd my-app && npm run dev",
+    "start": "cd my-app && npm start"
   },
   "devDependencies": {
     "sass": "^1.97.2"
