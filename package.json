@@ -1,11 +1,12 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "e-sheba-root",
   "version": "1.0.0",
+=======
+>>>>>>> parent of 283996c (Merge branch 'main' of https://github.com/Hadi20Diab/DigitalHubFirstProject)
   "scripts": {
-    "build": "cd my-app && npm ci && npm run build",
-    "dev": "cd my-app && npm run dev",
-    "start": "cd my-app && npm start"
+    "vercel-build": "cd my-app && npm ci && npm run build"
   },
 =======
 >>>>>>> parent of f72eb57 (Merge branch 'main' of https://github.com/Hadi20Diab/DigitalHubFirstProject)
