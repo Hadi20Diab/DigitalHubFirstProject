@@ -9,6 +9,25 @@
   --padding: 8rem;
 }
 
+/* Responsive padding adjustments */
+@media (max-width: 1200px) {
+  :root {
+    --padding: 4rem;
+  }
+}
+
+@media (max-width: 994px) {
+  :root {
+    --padding: 2rem;
+  }
+}
+
+@media (max-width: 573px) {
+  :root {
+    --padding: 1rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -84,6 +103,29 @@ main {
 
 main section {
   padding: 2rem var(--padding);
+}
+
+/* Responsive main section adjustments */
+@media (max-width: 994px) {
+  main {
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+
+  main section {
+    padding: 1.5rem var(--padding);
+  }
+}
+
+@media (max-width: 573px) {
+  main {
+    gap: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  main section {
+    padding: 1rem var(--padding);
+  }
 }
 
 header {

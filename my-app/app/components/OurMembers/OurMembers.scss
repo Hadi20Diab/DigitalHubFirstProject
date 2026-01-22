@@ -1,3 +1,5 @@
+@use '../../Styles/_mixins' as *;
+
 .OurMembersContainer {
     display: flex;
     flex-wrap: wrap;
@@ -8,12 +10,14 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
     flex: 1;
+    gap: 2rem;
 
     .OurMembers_contant {
         display: flex;
         flex-direction: column;
         gap: 1em;
         flex: 1;
+        min-width: 280px;
 
         h1 {
             font-size: 2.5rem;
@@ -28,6 +32,7 @@
             display: flex;
             align-items: center;
             gap: 1em;
+            flex-wrap: wrap;
 
             .OurMembers_images {
                 display: flex;
@@ -59,12 +64,14 @@
         flex: 1;
         border: 1px solid var(--background);
         max-width: 35em;
+        min-width: 280px;
 
         .OurMembers_card_header {
             display: flex;
             align-items: center;
             gap: 1em;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             .profile {
                 display: flex;
@@ -84,6 +91,65 @@
 
                 i {
                     font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @include mobileIpad {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 2rem;
+
+        .OurMembers_contant {
+            text-align: center;
+            align-items: center;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .OurMembers_reviews {
+                justify-content: center;
+            }
+        }
+
+        .OurMembers_card {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    @include mobile {
+        padding: 2rem 1rem;
+
+        .OurMembers_contant {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .OurMembers_reviews {
+                .ourMembers_reviews_count {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .OurMembers_card {
+            padding: 1.5em;
+            gap: 1.5em;
+
+            .OurMembers_card_header {
+                .profile {
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .stars {
+                    i {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }

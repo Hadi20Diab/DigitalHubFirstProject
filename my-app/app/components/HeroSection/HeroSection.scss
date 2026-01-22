@@ -1,3 +1,6 @@
+@use '../../Styles/_mixins' as *;
+
+
 .hero-section {
     margin-top: 2rem;
     position: relative;
@@ -9,13 +12,13 @@
         div {
             flex: 1;
         }
-
+  
         .hero-text {
             h1 {
                 font-size: 3rem;
                 line-height: 1.5;
                 margin-bottom: 1rem;
-
+                
                 .highlight-text {
                     color: var(--primary-color);
                     display: inline-block;
@@ -43,14 +46,14 @@
                     }
                 }
             }
-
+            
             p {
                 font-size: 1.2rem;
                 color: var(--primary-text-color);
                 margin-bottom: 1.5rem;
                 line-height: 1.5;
             }
-
+            
             .search-bar {
                 display: flex;
                 gap: 0.5rem;
@@ -65,8 +68,9 @@
                 position: relative;
                 width: 35rem;
                 flex-wrap: wrap;
-
-
+                max-width: 100%;
+                
+                
                 select {
                     border: none;
                 }
@@ -90,9 +94,9 @@
             }
         }
     }
-
+    
     .hero-images {
-
+        
         img {
             position: absolute;
             bottom: 0 !important;
@@ -108,11 +112,63 @@
             height: 110% !important;
             right: 2% !important;
         }
-
+        
         .backgroundHeroImage {
             z-index: 0;
             height: 70% !important;
             width: 45rem !important;
+        }
+    }
+
+    @include mobileIpad {
+        .hero-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .hero-images {
+            display: none;
+        }
+
+        .hero-text {
+            h1 {
+                font-size: 2.2rem !important;
+            }
+
+            .search-bar {
+                width: 100% !important;
+                max-width: 25rem;
+                margin: 1rem auto 0;
+            }
+        }
+    }
+
+    @include mobile {
+        margin-top: 1rem;
+
+        .hero-content {
+            padding: 0 1rem;
+        }
+
+        .hero-text {
+            h1 {
+                font-size: 1.6rem !important;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .search-bar {
+                padding: 0.4rem 0.8rem;
+                
+                .search-button {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
         }
     }
 }
@@ -125,16 +181,21 @@
     margin-top: var(--padding);
     z-index: 1;
     position: relative;
-
+    
     .col-3 {
         color: var(--secoundary-text-color);
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         align-items: center;
-
+        flex: 1;
+        
         h3 {
             font-size: 2rem;
+        }
+
+        p {
+            text-align: center;
         }
     }
 
@@ -143,5 +204,40 @@
         width: 1px;
         height: 50px;
         align-self: center;
+    }
+
+    @include mobileIpad {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        .col-3 {
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .vertical-line {
+            width: 50px;
+            height: 1px;
+        }
+    }
+    
+    @include mobile {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+
+        .col-3 {
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
     }
 }

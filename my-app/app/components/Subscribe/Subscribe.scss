@@ -1,3 +1,5 @@
+@use '../../Styles/_mixins' as *;
+
 .Subscribe-section{
     height: 350px;
     background-color: var(--primary-color);
@@ -6,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    padding: 2rem;
 
     h1{
         color: var(--secoundary-text-color);
@@ -16,6 +19,7 @@
     .input-wrapper {
         position: relative;
         width: 700px;
+        max-width: 100%;
         align-self: center;
 
         input{
@@ -55,4 +59,53 @@
         }
     }
 
+    @include mobileIpad {
+        height: auto;
+        min-height: 280px;
+        padding: 2.5rem 2rem;
+        gap: 25px;
+        border-radius: 15px;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .input-wrapper {
+            width: 100%;
+            max-width: 500px;
+
+            input {
+                height: 55px;
+            }
+        }
+    }
+
+    @include mobile {
+        min-height: 220px;
+        padding: 2rem 1rem;
+        gap: 20px;
+        border-radius: 12px;
+
+        h1 {
+            font-size: 1.4rem;
+            line-height: 1.4;
+        }
+
+        .input-wrapper {
+            input {
+                height: 50px;
+                padding: 10px 60px 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .submit-btn {
+                width: 40px;
+                height: 40px;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }

@@ -1,3 +1,5 @@
+@use '../../Styles/_mixins' as *;
+
 .QualityHealth-section{
     display: flex;
     gap: 2rem;
@@ -31,5 +33,39 @@
 
     }
 
+    @include mobileIpad {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
 
+        .QualityHealth-text {
+            order: 2;
+
+            a {
+                justify-content: center;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @include mobile {
+        gap: 1.5rem;
+
+        .QualityHealth-text {
+            gap: 0.8rem;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
 }

@@ -1,3 +1,5 @@
+@use '../../Styles/_mixins' as *;
+
 .footer-container {
   text-align: center;
   background-color: #0360D9;
@@ -5,9 +7,11 @@
   padding: 60px  var(--padding) 20px ;
 
   .footer-content {
-  margin-bottom: 70px;
-  display: flex;
-  justify-content: space-between;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   .footer-logo{
@@ -57,7 +61,53 @@
     margin-bottom: 20px;
     text-align: start;
   }
-  
 
+  @include mobileIpad {
+    padding: 40px 2rem 20px;
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .footer-logo {
+      text-align: center;
+      max-width: 100%;
+
+      .footer-social-media {
+        justify-content: center;
+      }
+    }
+
+    .footer-links {
+      align-items: center;
+
+      a {
+        text-align: center;
+      }
+    }
+
+    .address-title {
+      text-align: center;
+    }
+  }
+
+  @include mobile {
+    padding: 30px 1rem 15px;
+
+    .footer-content {
+      gap: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo {
+      .footer-brand-name-and-text {
+        gap: 15px;
+      }
+    }
+  }
 }
 

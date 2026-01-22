@@ -1,5 +1,15 @@
+@use '../../Styles/_mixins' as *;
+
 .navSection {
     padding: 1em var(--padding);
+
+    @include mobileIpad {
+        padding: 1em 2rem;
+    }
+
+    @include mobile {
+        padding: 0.8em 1rem;
+    }
 }
 
 .row {
@@ -34,6 +44,22 @@
                 }
             }
         }
+
+        @include mobileIpad {
+            ul {
+                gap: 1em;
+            }
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8em;
     }
 }
 
@@ -41,6 +67,10 @@
     h1 {
         span {
             color: var(--primary-color);
+        }
+
+        @include mobile {
+            font-size: 1.3rem;
         }
     }
 }
@@ -72,5 +102,15 @@
             color: var(--primary-color);
             background: transparent;
         }
+    }
+
+    @include mobileIpad {
+        padding: 0.7em 1.5em;
+        font-size: 0.9rem;
+    }
+
+    @include mobile {
+        padding: 0.5em 1em;
+        font-size: 0.8rem;
     }
 }

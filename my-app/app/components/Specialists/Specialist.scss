@@ -1,3 +1,5 @@
+@use '../../Styles/_mixins' as *;
+
 .Specialist-section {
     display: flex;
     flex-direction: column;
@@ -8,6 +10,7 @@
         gap: 0.625rem;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .specialist-card{
         border: 1px solid var(--primary-text-color);
@@ -19,6 +22,8 @@
         width: 17.8125rem;
         transition: all 0.3s ease;
         gap: .7rem;
+        flex: 1;
+        min-width: 200px;
 
         &:hover{
             background-color: var(--primary-color);
@@ -43,6 +48,46 @@
 
     }
 
+    @include mobileIpad {
+        gap: 1.5rem;
 
+        h2 {
+            text-align: center;
+        }
 
+        .specialist-cards {
+            justify-content: center;
+            gap: 1rem;
+
+            .specialist-card {
+                width: calc(50% - 0.5rem);
+                min-width: 180px;
+                max-width: 250px;
+            }
+        }
+    }
+
+    @include mobile {
+        gap: 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .specialist-cards {
+            flex-direction: column;
+            align-items: center;
+
+            .specialist-card {
+                width: 100%;
+                max-width: 100%;
+                padding: 1.2rem;
+
+                .specialist-icon {
+                    width: 4rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
 }
