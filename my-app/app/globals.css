@@ -14,7 +14,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     --primary-color: #3399FF;
-    --secoundary-color: #1a1a1a;
+    --secoundary-color: #e1eeffd4;
     --primary-text-color: #ededed;
     --secoundary-text-color: #FFFFFF;
   }
@@ -47,7 +47,7 @@ html[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
   --primary-color: #3399FF;
-  --secoundary-color: #1a1a1a;
+  --secoundary-color: #63697175;
   --primary-text-color: #ededed;
   --secoundary-text-color: #FFFFFF;
 }
