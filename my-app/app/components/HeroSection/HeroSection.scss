@@ -32,7 +32,7 @@
                         /* move underline slightly lower */
                         height: 4px;
                         /* thickness of the underline */
-                        background: linear-gradient(90deg, rgba(0, 123, 255, 0.95), rgba(0, 100, 230, 0.9));
+                        background: var(--primary-color);
                         border-radius: 999px;
                         /* rounded pill shape */
                         transform: rotate(-2deg) scaleX(1.04);
@@ -122,6 +122,12 @@
             width: 45rem !important;
         }
     }
+}
+
+/* Hide decorative background image in dark theme */
+html[data-theme="dark"] .backgroundHeroImage,
+html[data-theme="dark"] .hero-images .backgroundHeroImage {
+    display: none !important;
 }
 
 .row-features {

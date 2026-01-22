@@ -13,7 +13,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary-color: #3399FF;
+    --primary-color: #527aa1;
     --secoundary-color: #e1eeffd4;
     --primary-text-color: #FFFFFF;
     --secoundary-text-color: #ededed;
@@ -24,7 +24,7 @@
 html[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --primary-color: #3399FF;
+  --primary-color: #4f83bd;
   --secoundary-color: #e1eeff3d;
   --primary-text-color: #FFFFFF;
   --secoundary-text-color: #ededed;

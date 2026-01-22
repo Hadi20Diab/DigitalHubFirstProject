@@ -3,41 +3,43 @@
     flex-direction: column;
     gap: 1.875rem;
 
-    .specialist-cards{
+    .specialist-cards {
         display: flex;
         gap: 0.625rem;
         width: 100%;
         justify-content: space-between;
 
-        .specialist-card{
-        border: 1px solid var(--primary-text-color);
-        border-radius: 1.25rem;
-        padding: 1.875rem;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 17.8125rem;
-        transition: all 0.3s ease;
-        gap: .7rem;
+        .specialist-card {
+            border: 1px solid var(--primary-text-color);
+            border-radius: 1.25rem;
+            padding: 1.875rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 17.8125rem;
+            transition: all 0.3s ease;
+            gap: .7rem;
 
-        &:hover{
-            background-color: var(--primary-color);
-            color: var(--secoundary-text-color);
-            border-color: var(--primary-color);
-        }
-     
-
-
-            .specialist-icon{
-               border : 2px solid transparent;
-               background-color: var(--secoundary-color);
-               border-radius: 50%;
-               padding: 1.25rem;
-               width: 5rem;
+            &:hover {
+                background-color: var(--primary-color);
+                color: var(--secoundary-text-color);
+                border-color: var(--primary-color);
             }
 
 
-        
+
+            .specialist-icon {
+                border: 2px solid transparent;
+                background-color: var(--secoundary-color);
+                background-color: var(--primary-text-color);
+
+                border-radius: 50%;
+                padding: 1.25rem;
+                width: 5rem;
+            }
+
+
+
         }
 
 
