@@ -1,20 +1,47 @@
+@use '../../Styles/mixins' as *;
+
 .hero-section {
     margin-top: 2rem;
     position: relative;
 
+    @include mobile {
+        margin-top: 1rem;
+    }
+
     .hero-content {
         padding: 0 var(--padding);
         display: flex;
+
+        @include tablet {
+            flex-direction: column;
+            gap: 2rem;
+        }
 
         div {
             flex: 1;
         }
 
         .hero-text {
+            @include tablet {
+                text-align: center;
+            }
+
             h1 {
                 font-size: 3rem;
                 line-height: 1.5;
                 margin-bottom: 1rem;
+
+                @include tablet {
+                    font-size: 2.5rem;
+                }
+
+                @include mobile {
+                    font-size: 2rem;
+                }
+
+                @include small-mobile {
+                    font-size: 1.6rem;
+                }
 
                 .highlight-text {
                     color: var(--primary-color);
@@ -49,6 +76,10 @@
                 color: var(--primary-text-color);
                 margin-bottom: 1.5rem;
                 line-height: 1.5;
+
+                @include mobile {
+                    font-size: 1rem;
+                }
             }
 
             .search-bar {
@@ -64,41 +95,86 @@
                 z-index: 4;
                 position: relative;
                 width: 35rem;
-                flex-wrap: wrap;
+
+                @include tablet {
+                    width: 100%;
+                    max-width: 35rem;
+                    margin: 1rem auto 0;
+                }
+
+                @include mobile {
+                    flex-direction: column;
+                    padding: 1.5rem;
+                    border-radius: 1.5rem;
+                    gap: 1rem;
+                    align-items: stretch;
+                    height: auto;
+                }
 
                 .col-3 {
                     display: flex;
                     gap: 0.5em;
                     align-items: center;
+                    flex: 1;
+
+                    @include mobile {
+                        width: 100%;
+                        justify-content: flex-start;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        padding-bottom: 0.5rem;
+                        flex: 0 0 auto;
+                    }
                 }
 
                 select {
                     border: none;
                     padding: 0.3em;
                     border-radius: 1em;
+                    outline: none;
+                    background: transparent;
+                    width: 100%;
+                    cursor: pointer;
+
+                    @include mobile {
+                        font-size: 1rem;
+                        padding: 0.2rem 0;
+                    }
                 }
 
                 .search-button {
-                    flex: 0;
+                    flex: 0 0 auto;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     background-color: var(--primary-color);
                     color: var(--secoundary-text-color);
                     border: none;
-                    padding: 0.5rem 1.5rem;
-                    border-radius: 1rem;
                     cursor: pointer;
                     border-radius: 50%;
                     width: 3rem;
                     height: 3rem;
-                    align-content: center;
+
+                    @include mobile {
+                        width: 100%;
+                        border-radius: 2rem;
+                        height: 3rem;
+                        border-bottom: none;
+                        padding-bottom: 0;
+                        margin-top: 0.5rem;
+                    }
+                    
+                    i {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
     }
 
     .hero-images {
+        @include tablet {
+            display: none;
+        }
 
         img {
             position: absolute;
@@ -108,6 +184,14 @@
             left: auto !important;
             // height: auto !important;
             width: 50rem !important;
+
+            @include tablet {
+                width: 100% !important;
+                position: relative;
+                max-width: 400px;
+                margin: 0 auto;
+                display: block;
+            }
         }
 
         .heroImage {
@@ -120,6 +204,10 @@
             z-index: 0;
             height: 70% !important;
             width: 45rem !important;
+
+            @include tablet {
+                display: none;
+            }
         }
     }
 }
@@ -139,6 +227,19 @@ html[data-theme="dark"] .hero-images .backgroundHeroImage {
     z-index: 1;
     position: relative;
 
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem var(--padding);
+    }
+
     .col-3 {
         color: var(--secoundary-text-color);
         display: flex;
@@ -146,8 +247,20 @@ html[data-theme="dark"] .hero-images .backgroundHeroImage {
         gap: 0.5rem;
         align-items: center;
 
+        @include tablet {
+            min-width: 40%;
+        }
+
+        @include mobile {
+            min-width: 100%;
+        }
+
         h3 {
             font-size: 2rem;
+
+            @include mobile {
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -156,6 +269,10 @@ html[data-theme="dark"] .hero-images .backgroundHeroImage {
         width: 1px;
         height: 50px;
         align-self: center;
+
+        @include mobile {
+            display: none;
+        }
     }
 }
 

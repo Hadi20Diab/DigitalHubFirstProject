@@ -9,6 +9,25 @@
   --padding: 8rem;
 }
 
+/* Responsive padding */
+@media (max-width: 1024px) {
+  :root {
+    --padding: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --padding: 1rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -85,8 +104,21 @@ main {
   margin: var(--padding) auto;
 }
 
+@media (max-width: 768px) {
+  main {
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+}
+
 main section {
   padding: 2rem var(--padding);
+}
+
+@media (max-width: 768px) {
+  main section {
+    padding: 1.5rem var(--padding);
+  }
 }
 
 header {

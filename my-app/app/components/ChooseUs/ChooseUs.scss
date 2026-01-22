@@ -1,20 +1,61 @@
+@use '../../Styles/mixins' as *;
+
 .ChooseUs-section {
 
     display: flex;
     gap: 3.4rem;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .ChooseUs-image {
+        @include tablet {
+            order: -1;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+            @include mobile {
+                max-width: 80%;
+            }
+        }
+    }
 
     .ChooseUs-text{
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
 
+        @include tablet {
+            text-align: center;
+        }
+
+        h2 {
+            @include mobile {
+                font-size: 1.5rem;
+            }
+        }
+
         .ChooseUs-points{
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
 
+            @include tablet {
+                align-items: center;
+            }
+
             .ChooseUs-point{
                 display: flex;
+
+                @include tablet {
+                    text-align: left;
+                }
 
                 i{
                     color: var(--primary-color);
@@ -23,6 +64,10 @@
 
                 p{
                     margin-left: .8rem;
+
+                    @include mobile {
+                        font-size: 0.95rem;
+                    }
                 }
 
             }
@@ -36,6 +81,10 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+
+            @include tablet {
+                justify-content: center;
+            }
         }
 
     }

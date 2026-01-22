@@ -1,6 +1,31 @@
+@use '../../Styles/mixins' as *;
+
 .QualityHealth-section{
     display: flex;
     gap: 2rem;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .QualityHealth-images {
+        flex: 1;
+
+        @include tablet {
+            text-align: center;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+            @include mobile {
+                max-width: 100%;
+            }
+        }
+    }
 
     .QualityHealth-text{
 
@@ -8,6 +33,21 @@
         flex-direction: column;
         gap: 1rem;
 
+        @include tablet {
+            text-align: center;
+        }
+
+        h2 {
+            @include mobile {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            @include mobile {
+                font-size: 0.95rem;
+            }
+        }
 
         .QualityHealth-title2{
             
@@ -16,6 +56,10 @@
             }
 
             margin-bottom: .8rem;
+
+            @include mobile {
+                font-size: 1.3rem;
+            }
             
         }
 
@@ -27,6 +71,10 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+
+            @include tablet {
+                justify-content: center;
+            }
         }
 
     }
