@@ -2,6 +2,26 @@
 
 .navSection {
     padding: 1em var(--padding);
+    position: relative;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+
+    @include mobile {
+        display: block;
+    }
+
+    i {
+        transition: transform 0.3s ease;
+    }
 }
 
 .row {
@@ -11,6 +31,25 @@
     gap: 0.5em;
 
     nav {
+        @include mobile {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 70%;
+            height: 100vh;
+            background-color: #ffffff;
+            transition: left 0.3s ease;
+            z-index: 1000;
+            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
+            padding-top: 5rem;
+        }
+
+        &.mobile-menu-open {
+            @include mobile {
+                left: 0;
+            }
+        }
+
         ul {
             display: flex;
             gap: 2em;
@@ -20,16 +59,30 @@
             }
 
             @include mobile {
-                display: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                padding: 2rem 0;
             }
 
             li {
                 list-style: none;
 
+                @include mobile {
+                    border-bottom: 1px solid var(--secoundary-color);
+                    padding: 1rem 2rem;
+                }
+
                 a {
                     text-decoration: none;
                     color: var(--primary-text-color);
                     transition: color 0.2s ease-in-out;
+                    display: block;
+
+                    @include mobile {
+                        font-size: 1.1rem;
+                        padding: 0.5rem 0;
+                    }
 
                     &:hover {
                         color: var(--primary-color);
@@ -40,6 +93,13 @@
                         color: var(--primary-color);
                         border-bottom: 2.5px solid var(--primary-color);
                         padding-bottom: 2px;
+
+                        @include mobile {
+                            border-bottom: none;
+                            border-left: 4px solid var(--primary-color);
+                            padding-left: 1rem;
+                            padding-bottom: 0.5rem;
+                        }
                     }
                 }
             }
@@ -49,6 +109,10 @@
         color: var(--foreground);
         font-size: 1.3em;
         border: none;
+        
+        @include mobile {
+            font-size: 1.1em;
+        }
     }
 }
 
@@ -101,5 +165,19 @@
             color: var(--primary-color);
             background: transparent;
         }
+    }
+}
+
+/* Overlay for mobile menu */
+@include mobile {
+    nav.mobile-menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
     }
 }

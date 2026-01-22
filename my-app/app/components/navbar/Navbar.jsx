@@ -9,6 +9,7 @@ const Navbar = () => {
     const pathname = usePathname();
     
     const [theme, setTheme] = useState("light");
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         try {
@@ -36,16 +37,33 @@ const Navbar = () => {
         document.documentElement.setAttribute("data-theme", next);
     };
 
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
+
+    const closeMobileMenu = () => {
+        setMobileMenuOpen(false);
+    };
+
     return (
         <>
             <section className="navSection row">
                 <div className="logo-text"><h1>E-<span>sheba</span></h1></div>
-                <nav>
+                
+                <button 
+                    className="mobile-menu-toggle" 
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle mobile menu"
+                >
+                    <i className={mobileMenuOpen ? "bi bi-x" : "bi bi-list"}></i>
+                </button>
+
+                <nav className={mobileMenuOpen ? "mobile-menu-open" : ""}>
                     <ul>
-                        <li><Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link></li>
-                        <li><Link href="/about" className={pathname === "/about" ? "active" : ""}>About</Link></li>
-                        <li><Link href="/application" className={pathname === "/application" ? "active" : ""}>Application</Link></li>
-                        <li><Link href="/history" className={pathname === "/history" ? "active" : ""}>History</Link></li>
+                        <li><Link href="/" className={pathname === "/" ? "active" : ""} onClick={closeMobileMenu}>Home</Link></li>
+                        <li><Link href="/about" className={pathname === "/about" ? "active" : ""} onClick={closeMobileMenu}>About</Link></li>
+                        <li><Link href="/application" className={pathname === "/application" ? "active" : ""} onClick={closeMobileMenu}>Application</Link></li>
+                        <li><Link href="/history" className={pathname === "/history" ? "active" : ""} onClick={closeMobileMenu}>History</Link></li>
                     </ul>
                 </nav>
                 <div className="row">
