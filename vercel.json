@@ -1,8 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "my-app/package.json",
-      "use": "@vercel/next"
-    }
-  ]
+  "buildCommand": "cd my-app && npm ci && npm run build",
+  "outputDirectory": "my-app/.next",
+  "installCommand": "cd my-app && npm ci"
 }
